@@ -1,0 +1,9 @@
+# .graphclientrc.yml
+sources:
+  - name: hata
+    handler:
+      graphql:
+        endpoint: https://api.studio.thegraph.com/query/59239/hata/v0.1.3
+
+documents:
+  - ./.graphql

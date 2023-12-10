@@ -1,0 +1,320 @@
+.gradient {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  overflow: hidden;
+  position: relative;
+
+  background: rgb(97, 67, 133);
+  background: linear-gradient(
+    270deg,
+    rgba(97, 67, 133, 1) 0%,
+    rgba(81, 99, 149, 1) 100%
+  );
+
+  &:after {
+    position: absolute;
+    backdrop-filter: blur(80px);
+    content: "";
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .gradient_info_block {
+    z-index: 10;
+    width: 600px;
+    height: 500px;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+
+    .gradient_info_block_inner {
+      .gradient_text_wrapper {
+        margin: 50px 0;
+      }
+
+      .gradient_btn_wrapper {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        .gradient_btn {
+          width: 250px;
+          height: 50px;
+          border-radius: 5px;
+          outline: 0;
+          border: 1px solid black;
+          font-size: 20px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .gradient_img_block {
+    width: 600px;
+    height: 500px;
+    z-index: 10;
+    margin: 0px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .gradient_img {
+      height: 450px;
+      width: auto;
+    }
+  }
+}
+
+.gradient_behind-move_1 {
+  width: 400px;
+  position: absolute;
+  height: 400px;
+  border-radius: 80%;
+
+  background: linear-gradient(
+    270deg,
+    rgba(102, 45, 140, 1) 0%,
+    rgb(243, 129, 129) 100%
+  );
+  animation: gradient-animation_1 30s ease infinite;
+}
+
+.gradient_behind-move_2 {
+  width: 200px;
+  position: absolute;
+  height: 600px;
+  border-radius: 25%;
+  transform: rotateX(35%);
+  background: linear-gradient(
+    270deg,
+    rgba(102, 45, 140, 1) 0%,
+    rgba(237, 30, 121, 1) 100%
+  );
+  animation: gradient-animation_2 60s ease infinite;
+}
+
+.gradient_behind-move_3 {
+  width: 600px;
+  position: absolute;
+  height: 300px;
+  border-radius: 100px;
+  transform: rotate(45deg);
+  background: linear-gradient(
+    270deg,
+    rgba(102, 45, 140, 1) 0%,
+    rgb(240, 96, 158) 100%
+  );
+  animation: gradient-animation_3 40s ease infinite;
+}
+
+.gradient_behind-move_4 {
+  width: 250px;
+  position: absolute;
+  height: 250px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  background: linear-gradient(
+    270deg,
+    rgba(102, 45, 140, 1) 0%,
+    rgb(240, 96, 158) 100%
+  );
+  animation: gradient-animation_4 40s ease infinite;
+}
+
+.gradient_behind-move_5 {
+  width: 250px;
+  position: absolute;
+  height: 250px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  background: linear-gradient(
+    270deg,
+    rgba(102, 45, 140, 1) 0%,
+    rgb(243, 129, 129) 100%
+  );
+  animation: gradient-animation_5 30s ease infinite;
+}
+
+.gradient_behind-move_6 {
+  width: 500px;
+  position: absolute;
+  height: 500px;
+  border-radius: 50%;
+  transform: rotate(45deg);
+  background: linear-gradient(
+    270deg,
+    rgba(102, 45, 140, 1) 0%,
+    rgb(240, 96, 158) 100%
+  );
+  animation: gradient-animation_6 40s ease infinite;
+}
+
+@keyframes gradient-animation_1 {
+  0% {
+    top: 0%;
+    left: -30%;
+  }
+
+  25% {
+    top: 10%;
+    left: 15%;
+  }
+
+  50% {
+    top: 30%;
+    left: 35%;
+  }
+
+  75% {
+    left: 65%;
+    top: 45%;
+  }
+
+  100% {
+    top: -50%;
+    left: 105%;
+  }
+}
+
+@keyframes gradient-animation_2 {
+  0% {
+    top: -30%;
+    left: 120%;
+  }
+
+  25% {
+    top: 30%;
+    left: 55%;
+  }
+
+  50% {
+    top: 15%;
+    left: 35%;
+  }
+
+  75% {
+    left: 15%;
+    top: 45%;
+  }
+
+  100% {
+    top: 120%;
+    left: -40%;
+  }
+}
+
+@keyframes gradient-animation_3 {
+  0% {
+    top: 0%;
+    right: -50%;
+  }
+
+  25% {
+    top: 10%;
+    right: 20%;
+  }
+
+  50% {
+    top: 75%;
+    right: 40%;
+  }
+
+  75% {
+    right: 80%;
+    top: 45%;
+  }
+
+  100% {
+    top: 10%;
+    right: 100%;
+  }
+}
+
+@keyframes gradient-animation_4 {
+  0% {
+    top: 0;
+    left: -15%;
+  }
+
+  25% {
+    top: 15%;
+    left: 20%;
+  }
+
+  50% {
+    top: 10%;
+    left: 50%;
+  }
+
+  75% {
+    left: 80%;
+    top: 25%;
+  }
+
+  100% {
+    top: 80%;
+    left: 100%;
+  }
+}
+
+@keyframes gradient-animation_5 {
+  0% {
+    top: 50%;
+    left: -15%;
+  }
+
+  25% {
+    top: 65%;
+    left: 20%;
+  }
+
+  50% {
+    top: 30%;
+    left: 50%;
+  }
+
+  75% {
+    left: 30%;
+    top: 95%;
+  }
+
+  100% {
+    top: 30%;
+    left: -10%;
+  }
+}
+
+@keyframes gradient-animation_6 {
+  0% {
+    top: 50%;
+    left: 50%;
+  }
+
+  25% {
+    top: 35%;
+    left: 45%;
+  }
+
+  50% {
+    top: 25%;
+    left: 25%;
+  }
+
+  75% {
+    left: 80%;
+    top: 15%;
+  }
+
+  100% {
+    top: 00%;
+    left: -30%;
+  }
+}

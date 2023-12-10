@@ -1,0 +1,51 @@
+.header {
+  background: rgb(97, 67, 133);
+  background: linear-gradient(
+    270deg,
+    rgba(97, 67, 133, 1) 0%,
+    rgba(81, 99, 149, 1) 100%
+  );
+
+  .header_inner {
+    width: 1200px;
+    margin: 0 auto;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .add_advertisement {
+      color: black;
+      background-color: yellow;
+      padding: 10px 25px;
+      font-size: 18px;
+      border-radius: 25px;
+      cursor: pointer;
+      border: 2px solid black;
+
+      box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    .profile {
+      color: black;
+      background-color: rgb(255, 255, 255);
+      padding: 10px 20px;
+      font-size: 18px;
+      width: 180px;
+      text-align: center;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      cursor: pointer;
+
+      border-radius: 25px;
+      border: 2px solid black;
+
+      box-shadow:
+        rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+  }
+}

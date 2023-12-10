@@ -1,0 +1,30 @@
+.scroll_to_top {
+  background: linear-gradient(
+    270deg,
+    rgba(97, 67, 133, 1) 0%,
+    rgba(81, 99, 149, 1) 100%
+  );
+
+  font-size: 32px;
+  width: 60px;
+  height: 50px;
+  position: fixed;
+  bottom: 30px;
+  right: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 5px;
+  border: 1px solid black;
+  transition: 0.3s ease;
+  .scroll_icon {
+    width: 30px;
+    height: 30px;
+    color: white;
+  }
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}

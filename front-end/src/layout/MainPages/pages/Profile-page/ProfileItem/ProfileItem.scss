@@ -1,0 +1,25 @@
+.card {
+  margin: 20px 0;
+  cursor: pointer;
+
+  .card_info {
+    .card_img {
+      width: 200px;
+      height: 200px;
+      float: left;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .card_title {
+      font-size: 20px;
+      padding-left: 220px;
+    }
+
+    .card_price {
+      padding-left: 220px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.file_item {
+  width: 450px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+  .file_block {
+    display: flex;
+    align-items: center;
+
+    .files_remove_icon {
+      cursor: pointer;
+    }
+  }
+
+  .title_and_btn {
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+
+    .file_title {
+      margin-bottom: 15px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 250px;
+
+      white-space: nowrap;
+    }
+  }
+
+  .upload_preview_img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid black;
+  }
+
+  .file_index {
+    width: 30px;
+  }
+}

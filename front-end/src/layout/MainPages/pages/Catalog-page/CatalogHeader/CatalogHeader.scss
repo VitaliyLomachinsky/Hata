@@ -1,0 +1,42 @@
+.catalog_header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .catalog_title {
+    padding: 20px 0 5px 0;
+    font-size: 26px;
+  }
+
+  .sort {
+    display: flex;
+    width: fit-content;
+    padding: 10px 30px;
+    border: 1px solid black;
+    border-radius: 25px;
+    color: black;
+    margin: 0 5px;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    cursor: pointer;
+    border-bottom: 3px solid black;
+    box-shadow:
+      rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+
+  .filters_item_icon {
+    margin-left: 5px;
+    color: black;
+  }
+}
+
+.drop_down_div {
+  display: flex;
+
+  .drop_down_inner {
+    margin-right: 20px;
+  }
+
+}

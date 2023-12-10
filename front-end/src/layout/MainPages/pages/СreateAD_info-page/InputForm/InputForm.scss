@@ -1,0 +1,9 @@
+.toggle_row {
+  display: flex;
+  justify-content: space-between;
+
+  .period {
+    display: flex;
+    align-items: center;
+  }
+}

@@ -1,0 +1,30 @@
+.item_page {
+  display: flex;
+
+  justify-content: space-between;
+
+  .item_carusel {
+    width: 750px;
+
+
+  }
+
+  .item_description {
+    width: 450px;
+    padding: 0 20px;
+
+    .item_description_bold {
+      font-weight: bold;
+      font-size: 24px;
+    }
+  }
+}
+
+.back_to_catalog_btn {
+  margin: 25px;
+}
+
+.landlord {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

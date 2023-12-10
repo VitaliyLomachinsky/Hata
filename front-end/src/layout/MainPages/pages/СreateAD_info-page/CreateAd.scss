@@ -1,0 +1,30 @@
+.add-advertisement {
+  margin-top: 2%;
+}
+
+.form_container {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+
+  .form_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 1px solid grey;
+    width: 600px;
+    height: fit-content;
+  }
+
+  .form_description {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .form_description_inner {
+      width: fit-content;
+      height: fit-content;
+    }
+  }
+}

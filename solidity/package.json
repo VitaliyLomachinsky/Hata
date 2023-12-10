@@ -1,0 +1,45 @@
+{
+  "name": "solidity",
+  "version": "1.0.0",
+  "description": "Hata smart contracts",
+  "main": "index.js",
+  "scripts": {
+    "node": "hardhat node",
+    "compile": "hardhat compile",
+    "recompile": "hardhat clean && hardhat compile",
+    "test": "hardhat test",
+    "coverage": "hardhat coverage",
+    "deploy": "hardhat run scripts/deploy/deployProject.ts --network arbitrum_sepolia",
+    "verify": "hardhat run scripts/verify/verifyProject.ts --network arbitrum_sepolia",
+    "deploy:registry": "hardhat run scripts/deploy/deployRegistry.ts --network arbitrum_sepolia",
+    "verify:registry": "hardhat run scripts/verify/verifyRegistry.ts --network arbitrum_sepolia"
+  },
+  "keywords": [],
+  "contributors": [
+    {
+      "name": "Pukhno Bohdan",
+      "email": "pukhnobg@gmail.com"
+    },
+    {
+      "name": "Dmytro Sotnyk",
+      "email": "d3magexgod@gmail.com"
+    }
+  ],
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-chai-matchers": "^2.0.2",
+    "@nomicfoundation/hardhat-toolbox-viem": "^1.0.0",
+    "@types/chai": "^4.3.10",
+    "chai-eventemitter2": "^0.2.1",
+    "hardhat": "^2.19.0",
+    "ts-node": "^10.9.1",
+    "viem": "^1.18.9"
+  },
+  "dependencies": {
+    "@chainlink/contracts": "^0.8.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@openzeppelin/contracts-upgradeable": "^5.0.0",
+    "dotenv": "^16.3.1",
+    "typescript": "^5.2.2"
+  }
+}

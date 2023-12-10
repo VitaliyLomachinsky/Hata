@@ -1,0 +1,25 @@
+.profile_title {
+  padding: 20px 0 5px 0;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.profile_sections_wrapper {
+  width: 100%;
+  margin-top: 50px;
+  height: fit-content;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  .profile_section {
+    width: 50%;
+    padding: 0 30px;
+    height: fit-content;
+  }
+
+  .section_text {
+    text-align: center;
+  }
+}
